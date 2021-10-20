@@ -18,6 +18,6 @@ jobs:
           - name: install pylint
             run: |
               pip install pylint
-           - name: run pylint
+          - name: run pylint
             run: |
               python3 lint_test.py

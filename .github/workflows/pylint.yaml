@@ -1,0 +1,23 @@
+name: Deployment-of-python-app
+on: [push]
+jobs: 
+   build-and-depoly:
+      runs-on: ubuntu-latest
+      steps:
+          - run: echo "this has been triggred " 
+          - name: checkout repo content
+            uses: actions/checkout@v2
+          - name: setup python
+            uses: actions/setup-python@v2
+            with:
+              python-version: 3.9
+          - name: install pip
+            run: |
+              sudo apt-get install python3-pip
+              if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
+          - name: install pylint
+            run: |
+              pip install pylint
+           - name: run pylint
+            run: |
+              python3 lint_test.py

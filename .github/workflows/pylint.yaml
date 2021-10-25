@@ -15,9 +15,13 @@ jobs:
             run: |
               sudo apt-get install python3-pip
               if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
-          - name: install pylint
+          - name: install pylint and pycodestyle
             run: |
               pip install pylint
-          - name: run pylint
+              pip install pycodestyle
+          - name: Run pylint
             run: |
               python3 lint_test.py
+          - name: Run pycodestyle
+            run: |
+               pycodestyle *.py    

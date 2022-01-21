@@ -1,0 +1,23 @@
+name: QA-Ruby-Gherkin-Lint
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby 2.6
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+    - name: Install and run ruby gherkin lint
+      run: | 
+          gem install gherkin_lint
+          gherkin_lint -f /features/**/*.feature

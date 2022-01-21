@@ -1,0 +1,22 @@
+name: QA-Selenium-Staging-Sanity-Lint-Cucumber
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js environment and run node_lint_bdd script
+      uses: actions/setup-node@v2.1.5
+      with: 
+            node-version: '14'
+    - run: npm i -y
+    - run: npm i -y -g gherkin-lint@3.3.10
+    - run: sh ./scripts/node_lint_bdd.sh 

@@ -16,7 +16,7 @@ class Test(unittest.TestCase):
 
     @contextmanager
     def captured_output(self):
-		pass
+	pass
 
 
 

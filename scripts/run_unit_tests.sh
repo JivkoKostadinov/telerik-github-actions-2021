@@ -3,7 +3,7 @@
 
 if [[ "$OSTYPE" == "msys"* ]];
 then
-  python -m nose unit_tests/* --with-xunit --with-coverage --cover-erase --cover-package core -s
+  python -m nose unit_tests/*
 else
-  python3 -m nose unit_tests/* --with-xunit --with-coverage --cover-erase --cover-package core -s
+  python3 -m nose unit_tests/*
 fi

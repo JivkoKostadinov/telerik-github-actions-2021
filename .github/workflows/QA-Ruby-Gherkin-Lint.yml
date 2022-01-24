@@ -20,4 +20,4 @@ jobs:
     - name: Install and run ruby gherkin lint
       run: | 
           gem install gherkin_lint
-          gherkin_lint -f /features/**/*.feature
+          gherkin_lint -f /unit_tests/**/*.feature

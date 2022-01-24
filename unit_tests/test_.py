@@ -4,21 +4,17 @@ import unittest  # noqa
 import sys  # noqa
 import os  # noqa
 
-
-
 class Test(unittest.TestCase):
 
     def setUp(self):
-		pass
+        pass
 
     def tearDown(self):
         pass
 
     @contextmanager
     def captured_output(self):
-	pass
-
-
+        pass
 
 if __name__ == '__main__':
     unittest.main()

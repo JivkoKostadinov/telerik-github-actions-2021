@@ -2,9 +2,9 @@ name: QA-Selenium-Staging-Sanity-Lint-Cucumber
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:

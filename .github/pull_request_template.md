@@ -7,6 +7,5 @@ If the commits are more than 3, please squash them into one, and then request a 
 PR artifacts
 
 Jira Link: 
-AWS Links: 
-Test Run: 
+
 Comments to Code Reader:

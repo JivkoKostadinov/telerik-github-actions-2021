@@ -1,11 +1,10 @@
-from future import standard_library
 import unittest  # noqa
 import sys  # noqa
 import os  # noqa
 
+
 class Test(unittest.TestCase):
 
-    
     def setUp(self):
         pass
 
@@ -15,6 +14,7 @@ class Test(unittest.TestCase):
     def captured_output(self):
         pass
 
-    
+
 if __name__ == '__main__':
     unittest.main()
+

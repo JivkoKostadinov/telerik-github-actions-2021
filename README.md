@@ -24,3 +24,10 @@
 #### Flow diagram
 
 ![Untitled](https://user-images.githubusercontent.com/10487861/152150060-a989d6ab-a11a-42c8-a6a2-f2143ba1f684.jpg)
+
+
+#### What could be improved
+
+- Add worklflow process notifications: Slack, MS bots and etc.
+
+- Reports from all tests could be stored and send for further analyses 

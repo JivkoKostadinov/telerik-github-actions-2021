@@ -29,4 +29,4 @@ jobs:
     - name: Running unit tests
       run: sh ./scripts/run_unit_tests.sh
     - name: Running integration tests
-      run: sh ./scripts/run_unit_tests.sh
+      run: sh ./scripts/run_integrations_tests.sh

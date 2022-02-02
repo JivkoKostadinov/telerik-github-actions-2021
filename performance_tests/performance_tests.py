@@ -1,4 +1,5 @@
-from locust import HttpUser
+from locust import HttpUser, task
+
 
 class DemoUser(HttpUser):
 
@@ -8,6 +9,6 @@ class DemoUser(HttpUser):
 
     def on_start(self):
         pass
-      
+
     def on_end(self):
-        pass      
+        pass

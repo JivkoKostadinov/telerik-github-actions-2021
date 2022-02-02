@@ -31,3 +31,5 @@
 - Add worklflow process notifications: Slack, MS bots and etc.
 
 - Reports from all tests could be stored and send for further analyses 
+
+- Add some cache where we install dependcies adn etc.

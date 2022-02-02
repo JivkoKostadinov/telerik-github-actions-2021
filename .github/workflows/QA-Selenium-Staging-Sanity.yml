@@ -37,7 +37,7 @@ jobs:
 #           DOCKER_IMAGE_TAG: ${GITHUB_SHA:0:8}
       run: |
           echo "::set-output name=tag::${{ GITHUB_SHA:0:8 }}"
-          docker build -t ${{ secrets.DOCKER_HUB_REPO }}:${{ GITHUB_SHA:0:8 }} -t ${{ secrets.DOCKER_HUB_REPO }}:latest -f Dockerfile .
+          docker build -t ${{ secrets.DOCKER_HUB_REPO }}:${{ ${GITHUB_SHA:0:8} }} -t ${{ secrets.DOCKER_HUB_REPO }}:latest -f Dockerfile .
 #     - name: Push to docker repo
 #       run: |
 #           docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_PASSWORD }}

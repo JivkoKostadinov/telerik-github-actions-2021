@@ -15,7 +15,7 @@
 
 - [Cyclomatic and Code complexity](https://pypi.org/project/xenon/)  checks over the python code.
 
-- Unitand Intgeration tests are performaed with [Pytest](https://docs.pytest.org/en/6.2.x/) runner.
+- Unitand Intgeration tests are performaed with [Nose](https://nose.readthedocs.io/en/latest/testing.html) runner.
 
 - Performance tests are performed with [Locust.io](https://locust.io/) runner
 

@@ -40,5 +40,9 @@ jobs:
           DOCKER_IMAGE_TAG: ${GITHUB_SHA:0:8}    
     - name: Push to docker repo
       run: |
+          echo "${{ secrets.DOCKER_HUB_USERNAME }}"
+          echo "======== >>> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<" 
+          echo "${{ secrets.DOCKER_HUB_PASSWORD }}"
+          echo "======== >>> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
           docker login --username ${{ secrets.DOCKER_HUB_USERNAME }} --password ${{ secrets.DOCKER_HUB_PASSWORD }}
           docker image push --all-tags ${{ secrets.DOCKER_HUB_REPO }}

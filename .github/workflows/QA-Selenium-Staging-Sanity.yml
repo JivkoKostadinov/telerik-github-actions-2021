@@ -22,11 +22,11 @@ jobs:
         sudo apt-get install libkrb5-dev
         sudo apt-get install python3-pip
         if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
-    - name: Running static analysis - MACCABE
-      run: python3 ./scripts/maccabe.py
     - name: Running static analysis - Python lint
       run: sh ./scripts/python_lint.sh        
     - name: Running static analysis - Xenon
       run: sh ./scripts/xenon.sh        
     - name: Running unit tests
+      run: sh ./scripts/run_unit_tests.sh
+    - name: Running integration tests
       run: sh ./scripts/run_unit_tests.sh
